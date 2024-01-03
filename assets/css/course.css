@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Saira+Semi+Condensed:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color: #fff;
+  --backgroundcolor: rgba(44, 91, 24, 0.7);
+  --hoverbackgroundcolor: rgba(102, 102, 102, 1);
+}
+
+body {
+  background-color: #f7f7f8;
+}
+
+main a {
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  color: var(--color);
+  text-transform: capitalize;
+  font-size: 18px;
+}
+ 
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+header {
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(../img/coursePage/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 100px;
+  width: 100%;
+  padding: 30px 0;
+  color: var(--color);
+  background-position: center center;
+
+}
+
+.container {
+  width: calc(100% - 60px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+header .header-contant {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 80px;
+}
+
+
+main {
+  padding: 30px 0;
+}
+main .row {
+  gap: 50px;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  row-gap: 10px;
+  width: 100%;
+}
+main h3 {
+  color: rgb(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+}
+main h4 {
+  font-size: 15px;
+  color: rgba(102, 102, 102, 1);
+  margin: 10px;
+  text-transform: uppercase;
+}
+main .content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+main .content a {
+  border: 0.412px solid var(--backgroundcolor);
+  background-color: var(--backgroundcolor);
+  border-radius: 10px;
+  padding: 5px 20px;
+  align-items: center;
+  flex-grow: 2;
+  width: calc((100% - 20px) / 3);
+}
+
+@media screen and (max-width: 700px) {
+  
+  main .content a{
+    width: calc((100% - 10px) / 2);
+
+  }
+}
+@media screen and (max-width: 500px) {
+  
+  main .content a{
+    width:100%;
+
+  }
+}
+
+
+/*---------------------------------------*/
+main a {
+  z-index: 1;
+  position: relative;
+ }
+ 
+ a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: var(--hoverbackgroundcolor);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 0.5s
+ }
+ 
+ a:hover {
+  color: #e8e8e8;
+ }
+ a:hover::before {
+  width: 100%;
+ }
