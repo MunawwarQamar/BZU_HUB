@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Saira+Semi+Condensed:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --color: #fff;
+    --backgroundcolor: rgba(44, 91, 24, 0.7);
+    --hoverbackgroundcolor: rgba(102, 102, 102, 1);
+  }
+  body {
+    background-color: #f7f7f8;
+  }
+  a {
+    text-decoration: none; 
+    font-family: "Caveat", cursive;
+    color: var(--color);
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+  
+  header {
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(../img/majorPage/header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 100px;
+    width: 100%;
+    padding: 30px 0;
+    color: var(--color);
+  }
+  
+  .container {
+    width: calc(100% - 60px);
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  header .header-contant {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
