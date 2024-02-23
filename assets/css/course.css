@@ -75,7 +75,7 @@ main h3 {
   font-family: "Merriweather", serif;
   font-size: 25px;
 }
-main h4 {
+main span {
   font-size: 15px;
   color: rgba(102, 102, 102, 1);
   margin: 10px;
